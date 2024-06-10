@@ -1,17 +1,20 @@
-import Header from "./components/Header"
 import Navbar from "./components/Navbar"
+import Header from "./components/Header.jsx";
 import Footer from "./components/Footer"
-import { Outlet, Link } from "react-router-dom";
+import { Outlet} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Home from './pages/Home.jsx';
+import Blog from './pages/Blog.jsx';
 
 
 export default function App() {
   return (
     <div>
-      <Navbar />
-      <Link to="/">Home</Link>
-      <Link to="/blogs">Blogs</Link>
-      <Link to=""></Link>
-
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        {/* tambahin route yg lain */}
+      </Routes>
       <Outlet />
       <Footer />
     </div>

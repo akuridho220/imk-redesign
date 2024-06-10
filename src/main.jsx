@@ -10,12 +10,7 @@ import 'flowbite'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <React.StrictMode>
-      <Routes>
-        <Route path='/' element={<App />}>
-          <Route index element={<Home />}/>
-          <Route path='blogs' element={<Blog />}/>
-        </Route>
-      </Routes>
+      <App/>
     </React.StrictMode>
   </BrowserRouter>
 )
