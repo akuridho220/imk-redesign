@@ -29,6 +29,9 @@ export default {
         },
         search_text: {
           900 : '#5F5F5F',
+        },
+        footer : {
+          900 : '#343A40',
         }
       },
     },
