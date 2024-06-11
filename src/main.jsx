@@ -6,6 +6,7 @@ import Home from './pages/Home.jsx';
 import Blog from './pages/Blog.jsx';
 import './index.css'
 import 'flowbite'
+import Laporan from './pages/Laporan.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>

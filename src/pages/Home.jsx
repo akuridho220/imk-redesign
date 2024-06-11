@@ -1,3 +1,6 @@
+import Layout from "../components/Layout";
+import SubHeader from "../components/SubHeader";
+
 const Home = () => {
     return (
         <div>
