@@ -17,7 +17,7 @@ const Navbar = () => {
                                 <Link to="/" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center" aria-current="page">BERANDA</Link>
                             </li>
                             <li className="">
-                                <Link to="#" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">SI PPID</Link>
+                                <Link to="/si-ppid" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">SI PPID</Link>
                             </li>
                             <li className="">
                                 <Link to="/profil" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">PROFIL</Link>
@@ -53,12 +53,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            <Link to="/">Home</Link>
-            <Link to="/blogs">Blogs</Link>
-            <Link to="/laporan">Laporan</Link>
-            <Link to="/berita">Berita</Link>
-            <Link to="/galeri">Galeri</Link>
-            <Link to=""></Link>
         </div>
     )
 }
