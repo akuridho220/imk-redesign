@@ -12,6 +12,9 @@ import LaporanLKJIPNTB from "./pages/laporan/laporan-lkjip-ntb.jsx";
 import GambaranUmumPPID from "./pages/profil/gambaran-umum.jsx";
 import TugasFungsiPPID from "./pages/profil/tugas-fungsi.jsx";
 import VisiMisiPPID from "./pages/profil/visi-misi.jsx";
+import Berita from "./pages/berita/Berita.jsx";
+import BeritaDetail from "./pages/berita/BeritaDetail.jsx";
+import Galeri from "./pages/Galeri.jsx";
 
 
 export default function App() {
@@ -28,6 +31,9 @@ export default function App() {
         <Route path="/profil/gambaran-umum" element={<GambaranUmumPPID />}/>
         <Route path="/profil/tugas-fungsi" element={<TugasFungsiPPID />}/>
         <Route path="/profil/visi-misi" element={<VisiMisiPPID />}/>
+        <Route path="/berita" element={<Berita />}/>
+        <Route path="/berita/detail" element={<BeritaDetail />}/>
+        <Route path="/galeri" element={<Galeri />}/>
         {/* tambahin route yg lain */}
       </Routes>
       <Outlet />

@@ -56,6 +56,8 @@ const Navbar = () => {
             <Link to="/">Home</Link>
             <Link to="/blogs">Blogs</Link>
             <Link to="/laporan">Laporan</Link>
+            <Link to="/berita">Berita</Link>
+            <Link to="/galeri">Galeri</Link>
             <Link to=""></Link>
         </div>
     )
