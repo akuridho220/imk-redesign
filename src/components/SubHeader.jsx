@@ -1,6 +1,9 @@
 const SubHeader = (props) => {
     return(
-        <h1>Ini Sub Header : {props.subhead}</h1>
+        <div>
+            <h1 className="uppercase font-bold">{props.subhead}</h1>
+            <p>{props.detail}</p>
+        </div>
     )
 }
 

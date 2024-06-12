@@ -1,9 +1,9 @@
 import React from "react";
 import SubHeader from "./SubHeader";
-const Layout = ({ subhead, children }) => {
+const Layout = ({ subhead, detail, children }) => {
     return (
         <div className="container mx-auto ">
-            <SubHeader subhead = {subhead}/>
+            <SubHeader subhead = {subhead} detail = {detail}/>
             {children}
         </div>
     );

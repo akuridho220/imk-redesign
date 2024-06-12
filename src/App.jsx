@@ -9,6 +9,9 @@ import Laporan from "./pages/Laporan.jsx";
 import LaporanTahunanPPID from "./pages/laporan/laporan-tahunan-ppid.jsx";
 import LaporanKeuanganNTB from "./pages/laporan/laporan-keuangan-ntb.jsx";
 import LaporanLKJIPNTB from "./pages/laporan/laporan-lkjip-ntb.jsx";
+import Berita from "./pages/berita/Berita.jsx";
+import BeritaDetail from "./pages/berita/BeritaDetail.jsx";
+import Galeri from "./pages/Galeri.jsx";
 
 
 export default function App() {
@@ -22,6 +25,9 @@ export default function App() {
         <Route path="/laporan/keuangan-prov-ntb" element={<LaporanKeuanganNTB />}/>
         <Route path="/laporan/lkjip-prov-ntb" element={<LaporanLKJIPNTB />}/>
         <Route path="/blogs" element={<Blog />}/>
+        <Route path="/berita" element={<Berita />}/>
+        <Route path="/berita/detail" element={<BeritaDetail />}/>
+        <Route path="/galeri" element={<Galeri />}/>
         {/* tambahin route yg lain */}
       </Routes>
       <Outlet />
