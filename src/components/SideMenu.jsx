@@ -7,7 +7,11 @@ const SideMenu = ({konten, children}) => {
         {path: "/laporan/lkjip-prov-ntb", submenu: "LKjIP Provinsi NTB", konten: "laporan"},
         {path: "/profil/gambaran-umum", submenu: "Gambaran Umum", konten: "profil"},
         {path: "/profil/visi-misi", submenu: "Visi Dan Misi", konten: "profil"},
-        {path: "/profil/tugas-fungsi", submenu: "Tugas Dan Fungsi", konten: "profil"}
+        {path: "/profil/tugas-fungsi", submenu: "Tugas Dan Fungsi", konten: "profil"},
+        {path: "/si-ppid/informasi-setiap-saat", submenu: "Informasi Setiap Saat", konten: "si-ppid"},
+        {path: "/si-ppid/informasi-berkala", submenu: "Informasi Berkala", konten: "si-ppid"},
+        {path: "/si-ppid/informasi-serta-merta", submenu: "Informasi Serta Merta", konten: "si-ppid"},
+        
 
     ]
 

@@ -15,6 +15,10 @@ import VisiMisiPPID from "./pages/profil/visi-misi.jsx";
 import Berita from "./pages/berita/Berita.jsx";
 import BeritaDetail from "./pages/berita/BeritaDetail.jsx";
 import Galeri from "./pages/Galeri.jsx";
+import Kontak from "./pages/kontak/kontak.jsx";
+import InformasiSetiapSaat from "./pages/si-ppid/informasi-setiap-saat.jsx";
+import InformasiBerkala from "./pages/si-ppid/informasi-berkala.jsx";
+import InformasiSertaMerta from "./pages/si-ppid/informasi-serta-merta.jsx";
 
 
 export default function App() {
@@ -23,6 +27,10 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />}/>
+        <Route path="/si-ppid" element={<InformasiSetiapSaat />}/>
+        <Route path="/si-ppid/informasi-setiap-saat" element={<InformasiSetiapSaat />}/>
+        <Route path="/si-ppid/informasi-berkala" element={<InformasiBerkala />}/>
+        <Route path="/si-ppid/informasi-serta-merta" element={<InformasiSertaMerta />}/>
         <Route path="/laporan" element={<LaporanTahunanPPID />}/>
         <Route path="/laporan/tahunan-ppid" element={<LaporanTahunanPPID />}/>
         <Route path="/laporan/keuangan-prov-ntb" element={<LaporanKeuanganNTB />}/>
@@ -34,6 +42,8 @@ export default function App() {
         <Route path="/berita" element={<Berita />}/>
         <Route path="/berita/detail" element={<BeritaDetail />}/>
         <Route path="/galeri" element={<Galeri />}/>
+        <Route path="/kontak" element={<Kontak />}/>
+
         {/* tambahin route yg lain */}
       </Routes>
       <Outlet />
