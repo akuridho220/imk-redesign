@@ -20,7 +20,7 @@ const Navbar = () => {
                                 <Link to="#" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">SI PPID</Link>
                             </li>
                             <li className="">
-                                <Link to="#" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">PROFILE</Link>
+                                <Link to="/profil/gambaran-umum" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">PROFIL</Link>
                             </li>
                             <li className="">
                                 <Link to="#" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">LAPORAN</Link>

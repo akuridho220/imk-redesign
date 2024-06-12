@@ -9,6 +9,9 @@ import Laporan from "./pages/Laporan.jsx";
 import LaporanTahunanPPID from "./pages/laporan/laporan-tahunan-ppid.jsx";
 import LaporanKeuanganNTB from "./pages/laporan/laporan-keuangan-ntb.jsx";
 import LaporanLKJIPNTB from "./pages/laporan/laporan-lkjip-ntb.jsx";
+import GambaranUmumPPID from "./pages/profil/gambaran-umum.jsx";
+import TugasFungsiPPID from "./pages/profil/tugas-fungsi.jsx";
+import VisiMisiPPID from "./pages/profil/visi-misi.jsx";
 
 
 export default function App() {
@@ -21,7 +24,10 @@ export default function App() {
         <Route path="/laporan/tahunan-ppid" element={<LaporanTahunanPPID />}/>
         <Route path="/laporan/keuangan-prov-ntb" element={<LaporanKeuanganNTB />}/>
         <Route path="/laporan/lkjip-prov-ntb" element={<LaporanLKJIPNTB />}/>
-        <Route path="/blogs" element={<Blog />}/>
+        <Route path="/profil" element={<GambaranUmumPPID />}/>
+        <Route path="/profil/gambaran-umum" element={<GambaranUmumPPID />}/>
+        <Route path="/profil/tugas-fungsi" element={<TugasFungsiPPID />}/>
+        <Route path="/profil/visi-misi" element={<VisiMisiPPID />}/>
         {/* tambahin route yg lain */}
       </Routes>
       <Outlet />

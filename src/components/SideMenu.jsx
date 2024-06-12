@@ -5,20 +5,25 @@ const SideMenu = ({konten, children}) => {
         {path: "/laporan/tahunan-ppid", submenu:"Tahunan PPID", konten: "laporan"},
         {path: "/laporan/keuangan-prov-ntb", submenu: "Keuangan Provinsi NTB", konten: "laporan"},
         {path: "/laporan/lkjip-prov-ntb", submenu: "LKjIP Provinsi NTB", konten: "laporan"},
+        {path: "/profil/gambaran-umum", submenu: "Gambaran Umum", konten: "profil"},
+        {path: "/profil/visi-misi", submenu: "Visi Dan Misi", konten: "profil"},
+        {path: "/profil/tugas-fungsi", submenu: "Tugas Dan Fungsi", konten: "profil"}
 
     ]
+
+    // filter list menu bds konten halaman
+    const filteredMenu = listMenu.filter(item => item.konten === konten);
 
     return(
         <div className="flex">
             <div className="w-1/4 border-r-2" style={{ visibility: "visible" }}>
                 <div className="bg-white p-4">
                     <div className="font-bold mb-4 uppercase">{konten}</div>
-                    {listMenu.filter(item => item.konten === "laporan").map(({ path, submenu }) => (
+                    {filteredMenu.map(({ path, submenu }) => (
                         <ListMenu key={path} path={path} submenu={submenu} />
                     ))}
                 </div>
             </div>
-
 
             <div className="w-3/4" style={{ visibility: "visible" }}>
                 <div className="bg-white p-4">
@@ -26,11 +31,6 @@ const SideMenu = ({konten, children}) => {
                 </div>  
             </div>
         </div>
-
-
-        // <h1>OSENFWE</h1>
-
-
     )
 }
 
