@@ -19,6 +19,7 @@ import Kontak from "./pages/kontak/kontak.jsx";
 import InformasiSetiapSaat from "./pages/si-ppid/informasi-setiap-saat.jsx";
 import InformasiBerkala from "./pages/si-ppid/informasi-berkala.jsx";
 import InformasiSertaMerta from "./pages/si-ppid/informasi-serta-merta.jsx";
+import StrukturPPID from "./pages/profil/struktur-organisasi.jsx";
 
 
 export default function App() {
@@ -39,6 +40,7 @@ export default function App() {
         <Route path="/profil/gambaran-umum" element={<GambaranUmumPPID />}/>
         <Route path="/profil/tugas-fungsi" element={<TugasFungsiPPID />}/>
         <Route path="/profil/visi-misi" element={<VisiMisiPPID />}/>
+        <Route path="/profil/struktur-organisasi" element={<StrukturPPID />} />
         <Route path="/berita" element={<Berita />}/>
         <Route path="/berita/detail" element={<BeritaDetail />}/>
         <Route path="/galeri" element={<Galeri />}/>
