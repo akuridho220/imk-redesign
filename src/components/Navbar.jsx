@@ -22,8 +22,23 @@ const Navbar = () => {
                             <li className="">
                                 <Link to="/profil" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">PROFIL</Link>
                             </li>
-                            <li className="">
-                                <Link to="/laporan" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">LAPORAN</Link>
+                            <li>                                
+                                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown-laporan" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center" type="button">LAPORAN <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
+                                </svg>
+                                </button>
+
+                                {/* <!-- Dropdown menu --> */}
+                                <div id="dropdown-laporan" className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                    <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                                        <li>
+                                            <Link to="/laporan" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Laporan PPID</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/statistik" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Statistik Layanan Publik</Link>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
                                 <Link to="/berita" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">BERITA</Link>

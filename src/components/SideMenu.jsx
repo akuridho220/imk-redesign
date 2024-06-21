@@ -4,7 +4,7 @@ const SideMenu = ({konten, children}) => {
     const listMenu = [
         {path: "/laporan/tahunan-ppid", submenu:"Tahunan PPID", konten: "laporan"},
         {path: "/laporan/keuangan-prov-ntb", submenu: "Keuangan Provinsi NTB", konten: "laporan"},
-        {path: "/laporan/lkjip-prov-ntb", submenu: "LKjIP Provinsi NTB", konten: "laporan"},
+        {path: "/laporan/lkjip-prov-ntb", submenu: "LKjIP Provinsi NTB", konten: "laporan"}, 
         {path: "/profil/gambaran-umum", submenu: "Gambaran Umum", konten: "profil"},
         {path: "/profil/visi-misi", submenu: "Visi Dan Misi", konten: "profil"},
         {path: "/profil/tugas-fungsi", submenu: "Tugas Dan Fungsi", konten: "profil"},
