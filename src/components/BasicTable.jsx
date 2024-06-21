@@ -2,6 +2,7 @@
 import { getCoreRowModel, useReactTable, flexRender, getPaginationRowModel, getSortedRowModel, getFilteredRowModel } from '@tanstack/react-table';
 import { useState } from 'react';
 import * as Icon from 'react-feather';
+import { Link } from 'react-router-dom';
 //import { cn } from '@nextui-org/react';
 
 function BasicTable({ data, columns }) {
@@ -66,7 +67,7 @@ function BasicTable({ data, columns }) {
                                     {row.getVisibleCells().map((cell) => (
                                     <td key={cell.id} 
                                         className="px-8 py-3 whitespace-nowrap md:text-sm text-gray-600">
-                                        <a href="#">{flexRender(cell.column.columnDef.cell, cell.getContext())}</a>
+                                        <Link to={`/informasi/?judul=${cell.getValue()}`}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</Link>
                                     </td>
                                     ))}
                                 </tr>

@@ -21,7 +21,8 @@ const InformasiSetiapSaat = () => {
     return (
         <Layout subhead="SI PPID">
             <SideMenu konten="si-ppid">
-                <div>
+                <div className="flex flex-col">
+                    <p className="font-bold text-footer-900 text-lg" >Informasi Setiap Saat</p>
                     <BasicTable columns={columns} data={data}/>
                 </div>
             </SideMenu>

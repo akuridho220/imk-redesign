@@ -18,7 +18,10 @@ const InformasiBerkala = () => {
     return (
         <Layout subhead="SI PPID">
             <SideMenu konten="si-ppid">
-                <BasicTable columns={columns} data={data}/>
+                <div className="flex flex-col">
+                    <p className="font-bold text-footer-900 text-lg" >Informasi Berkala</p>
+                    <BasicTable columns={columns} data={data}/>
+                </div>
             </SideMenu>
         </Layout>
     )

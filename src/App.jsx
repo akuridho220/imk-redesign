@@ -21,6 +21,7 @@ import InformasiBerkala from "./pages/si-ppid/informasi-berkala.jsx";
 import InformasiSertaMerta from "./pages/si-ppid/informasi-serta-merta.jsx";
 import StrukturPPID from "./pages/profil/struktur-organisasi.jsx";
 import Statistik from "./pages/statistik/statistik.jsx";
+import SampleInformasi from "./pages/si-ppid/sample-informasi.jsx";
 
 
 export default function App() {
@@ -47,6 +48,7 @@ export default function App() {
         <Route path="/galeri" element={<Galeri />}/>
         <Route path="/kontak" element={<Kontak />}/>
         <Route path="/statistik" element={<Statistik />} />
+        <Route path="/informasi" element={<SampleInformasi />} />
 
         {/* tambahin route yg lain */}
       </Routes>
