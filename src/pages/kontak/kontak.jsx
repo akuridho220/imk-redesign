@@ -2,9 +2,9 @@ import BoxHeader from "../../components/BoxHeader";
 
 const Kontak = () => {
     return (
-        <div className="content w-full flex flex-col items-center m-4">
+        <div className="content w-full flex flex-col items-center md:m-4">
             <BoxHeader title="Kontak Kami"/>
-            <div className="flex my-10">
+            <div className="flex flex-col md:flex-row my-10 md:w-3/4">
                 <div className="flex flex-col md:w-1/2">
                     <div className="">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31561.86469763236!2d116.102117!3d-8.573573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdc0a05868bf9d%3A0x873f581b2730c881!2sDinas%20Komunikasi%20Informatika%20dan%20Statistik%20Prov%20NTB!5e0!3m2!1sid!2sid!4v1718273473073!5m2!1sid!2sid" width="100%" height="320" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>

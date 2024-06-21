@@ -4,7 +4,7 @@ import BoxHeader from "../../components/BoxHeader";
 const Statistik = () => {
     const options1 = {
         chart : {
-            id: "basic-bar"
+            id: "basic-bar",
         },
         xaxis: {
             categories: ["DIP Berkala","DIP Serta Merta", "DIP Setiap Saat"]
@@ -43,7 +43,7 @@ const Statistik = () => {
 
     const options2 = {
         chart : {
-            id: "basic-bar"
+            id: "basic-bar",
         },
         xaxis: {
             categories: ["Menunggu","Diproses", "Dipenuhi", "Ditolak"]
@@ -83,7 +83,7 @@ const Statistik = () => {
 
 
     return (
-        <div className="content w-full flex flex-col items-center m-4">
+        <div className="content w-full flex flex-col items-center md:m-4">
             <BoxHeader title="Statistik" />
             <div className="flex flex-col divide-y">
                 <div className="">
@@ -92,16 +92,14 @@ const Statistik = () => {
                         series={series1}
                         type="bar"
                         width="800"
-                        className="mt-10"
                     />
                 </div>
-                <div>
+                <div className="">
                     <Chart 
                         options={options2}
                         series={series2}
                         type="bar"
                         width="800"
-                        className="mt-10"
                     />
                 </div>
             </div>
