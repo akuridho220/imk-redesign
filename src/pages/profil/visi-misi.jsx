@@ -5,8 +5,12 @@ const VisiMisiPPID = () =>{
     return(
         <Layout subhead="Profil" detail="Visi dan Misi PPID NTB">
             <SideMenu konten="profil">
-                <div>
-                    <img src="..\src\assets\img\images\VisiMisi-PPIDNTB.jpeg" alt="visi misi" />
+                <div className="flex flex-col">
+                    <p className="font-bold text-footer-900 text-xl md:text-2xl mb-2">Visi dan Misi PPID NTB</p>
+                    <img 
+                        src="..\src\assets\img\images\VisiMisi-PPIDNTB.jpeg" 
+                        alt="visi misi" 
+                        className="w-full"/>
                 </div>
             </SideMenu>
         </Layout>
