@@ -1,7 +1,23 @@
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import { useEffect } from "react";
 
 const Header = () => {
+    useEffect(() => {
+        window.onscroll = function() {
+            handleStickyNavbar();
+        }
+    }, [])
+    const handleStickyNavbar = () => {
+        const navbar = document.getElementById("navbar");
+        const sticky = navbar.offsetTop;
+
+        if(window.pageYOffset > sticky){
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
     return (
         <div>
             <header className="bg-white border-gray-200 dark:bg-gray-900 mx-10" >

@@ -29,7 +29,7 @@ const data = [
     },
     {
         no: '8',
-        judul: 'Kesepakatan bersama antara DPMPD DUKCAPIL dengan Fakultas Ekonomi dan Bisnis Universitas Teknologi Sumbawa'
+        judul: 'Bukti Koordinasi Pejabat Pengelola Informasi & Dokumentasi (PPID)'
     },
     {
         no: '9',

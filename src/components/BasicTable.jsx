@@ -28,16 +28,6 @@ function BasicTable({ data, columns }) {
             <div className="-my-2 sm:-mx-6 overflow-x-auto">
                 <div className="py-2 align-middle inline-block min-w-full sm:px-6">
                     <div className="flex bg-gray-100 rounded-t-lg">
-                        <div className="flex items-center text-sm p-4 md:mr-[55%] mr-auto">
-                        <p className="">Show</p>
-                        <select id="filterSize" className="p-2 border bg-white rounded-lg mx-2" onChange={(event) => table.setPageSize(parseInt(event.target.value))}>
-                            <option value="10">10</option>
-                            <option value="25">25</option>
-                            <option value="50">50</option>
-                            <option value="100">100</option>
-                        </select>
-                        <p className="">entries</p>
-                        </div>
                         <div className="flex items-center text-sm p-4">
                         <p className="px-2">Search:</p>
                         <input type="text" className="p-2 border rounded md:w-full w-[75%]" value={filtering} onChange={(e) => setFiltering(e.target.value)} />
@@ -67,7 +57,7 @@ function BasicTable({ data, columns }) {
                                     {row.getVisibleCells().map((cell) => (
                                     <td key={cell.id} 
                                         className="px-8 py-3 whitespace-nowrap md:text-sm text-gray-600">
-                                        <Link to={`/informasi/?judul=${cell.getValue()}`}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</Link>
+                                        <Link to={`/informasi/?judul=${cell.getValue()}`} className='flex'>{flexRender(cell.column.columnDef.cell, cell.getContext())}</Link>
                                     </td>
                                     ))}
                                 </tr>

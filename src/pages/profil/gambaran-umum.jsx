@@ -7,17 +7,17 @@ const GambaranUmumPPID = () =>{
             <SideMenu konten="profil">
                 <div className="flex flex-col">
                     <p className="font-bold text-footer-900 text-xl md:text-2xl mb-2">Gambaran Umum PPID Provinsi NTB</p>
-                    <div className="flex flex-col md:flex-row mb-5">
-                        <img src="..\src\assets\img\images\RuangUtamaPelayanan2.jpg" 
-                            alt="ruang utama" 
-                            className="w-full md:w-1/2"/>
-                        <div className="mx-2 md:mx-4">
+                    <div className="flex flex-col md:flex-row mb-10">
+                        <div className="md:mx-4 mx-2">
+                            <img src="..\src\assets\img\images\RuangUtamaPelayanan2.jpg" 
+                                alt="ruang utama" 
+                                className="w-full h-full md:w-1/2 md:mx-4 md:float-left"/>    
                             <p className="font-bold text-footer-900 text-lg">Latar Belakang</p>
                             <p className="text-justify">Keterbukaan Informasi Publik merupakan aspek yang penting dalam rangka mewujudkan penyelenggaraan negara transparan. Oleh karena itu adalah hak publik untuk memperoleh Informasi sesuai dengan peraturan perundang¬undangan. Hak atas Informasi. Hak setiap Orang untuk memperoleh Informasi juga relevan untuk meningkatkan keterlibatan masyarakat dalam proses pengambilan keputusan publik. Partisipasi masyarakat dapat terlaksana apabila adanya jaminan akan Keterbukaan Informasi Publik.</p>
                         </div>
                     </div>
                     {/* <img src="..\src\assets\img\images\LobbyPendaftaran.jpg" alt="lobi pendaftaran" /> */}
-                    <div className="mx-2 md:mx-4">
+                    <div className="mx-2 md:mx-4 mt-5">
                         <p className="font-bold text-footer-900 text-lg">Dasar Hukum</p>
                         <p className="text-justify">Keberadaan Undang-undang tentang Keterbukaan Informasi Publik sangat penting sebagai landasan hukum yang berkaitan dengan (1) hak setiap Orang untuk memperoleh Informasi; (2) kewajiban Badan Publik menyediakan dan melayani permintaan Informasi secara cepat, tepat waktu, biaya ringan/proporsional, dan cara sederhana; (3) pengecualian bersifat ketat dan terbatas; (4) kewajiban Badan Publik untuk membenahi sistem dokumentasi dan pelayanan Informasi.</p>
                         <p className="text-justify">Atas dasar pemikiran tersebut, maka Pemerintah Provinsi Nusa Tenggara Barat membentuk Pejabat Pengelola Informasi dan Dokumentasi Provinsi Nusa Tenggara Barat sebagaimana tertuang dalam Peraturan Gubernur Nusa Tenggara Barat Nomor 35 Tahun 2012 Tentang Pedoman Pengelolaan Informasi dan Dokumentasi di Lingkungan Pemerintah Provinsi Nusa Tenggara Barat yang mana mangatur tata kerja, tata cara pengelolaan dan pelayanan informasi dan dokumentasi oleh Pejabat Pengelola Informasi dan Dokumentasi Pemerintah Provinsi Nusa Tenggara Barat.</p>
