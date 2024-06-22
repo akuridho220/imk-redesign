@@ -77,7 +77,7 @@ const LaporanDetail = () => {
                             </p>
                             <br />
 
-                            <div className="Abstract_abstract__J_Qgq !mt-0">
+                            <div className="Abstract_abstract__J_Qgq !mt-0 text-justify">
                             Di sebuah kota kecil yang indah, hiduplah seorang pria bernama Arman yang bekerja sebagai desainer grafis. Setiap hari, dia pergi ke kafe favoritnya untuk bekerja sambil menikmati kopi. Suatu hari, saat sedang sibuk dengan laptopnya, dia bertemu dengan seorang wanita bernama Sinta yang sedang membaca buku di meja sebelah. Pertemuan mereka dimulai dengan senyuman dan obrolan ringan tentang buku dan desain. Dari perbincangan singkat itu, mereka merasa cocok dan mulai sering bertemu di kafe yang sama.
                             <br />
                             <br />

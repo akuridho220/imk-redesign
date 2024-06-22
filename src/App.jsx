@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar"
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer"
 import { Outlet} from "react-router-dom";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from './pages/Home.jsx';
 import Blog from './pages/Blog.jsx';
 import Laporan from "./pages/Laporan.jsx";
@@ -31,16 +31,16 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/si-ppid" element={<InformasiSetiapSaat />}/>
+        <Route path="/si-ppid" element={<Navigate to="/si-ppid/informasi-setiap-saat" />}/>
         <Route path="/si-ppid/informasi-setiap-saat" element={<InformasiSetiapSaat />}/>
         <Route path="/si-ppid/informasi-berkala" element={<InformasiBerkala />}/>
         <Route path="/si-ppid/informasi-serta-merta" element={<InformasiSertaMerta />}/>
-        <Route path="/laporan" element={<LaporanTahunanPPID />}/>
+        <Route path="/laporan" element={<Navigate to="/laporan/tahunan-ppid" />}/>
         <Route path="/laporan/tahunan-ppid" element={<LaporanTahunanPPID />}/>
         <Route path="/laporan/keuangan-prov-ntb" element={<LaporanKeuanganNTB />}/>
         <Route path="/laporan/lkjip-prov-ntb" element={<LaporanLKJIPNTB />}/>
         <Route path="/laporan/detail" element={<LaporanDetail />}/>
-        <Route path="/profil" element={<GambaranUmumPPID />}/>
+        <Route path="/profil" element={<Navigate to="/profil/gambaran-umum" />}/>
         <Route path="/profil/gambaran-umum" element={<GambaranUmumPPID />}/>
         <Route path="/profil/tugas-fungsi" element={<TugasFungsiPPID />}/>
         <Route path="/profil/visi-misi" element={<VisiMisiPPID />}/>

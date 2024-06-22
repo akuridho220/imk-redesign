@@ -29,8 +29,15 @@ function BasicTable({ data, columns }) {
                 <div className="py-2 align-middle inline-block min-w-full sm:px-6">
                     <div className="flex bg-gray-100 rounded-t-lg">
                         <div className="flex items-center text-sm p-4">
-                        <p className="px-2">Search:</p>
-                        <input type="text" className="p-2 border rounded md:w-full w-[75%]" value={filtering} onChange={(e) => setFiltering(e.target.value)} />
+                        {/* <p className="px-2">Search:</p> */}
+                        <input
+                            type="text"
+                            placeholder="Cari Berita ..."
+                            value={filtering}
+                            onChange={(e) => setFiltering(e.target.value)}
+                            className="px-4 py-2 border rounded-xl md:w-full w-[75%]"
+                        />
+                        {/* <input type="text" className="p-2 border rounded md:w-full w-[75%]" value={filtering} onChange={(e) => setFiltering(e.target.value)} /> */}
                         </div>
                     </div>
                     <div className="shadow overflow-hidden border-b border-gray-200 rounded-b-lg">
@@ -56,8 +63,9 @@ function BasicTable({ data, columns }) {
                                 <tr key={row.id}>
                                     {row.getVisibleCells().map((cell) => (
                                     <td key={cell.id} 
-                                        className="px-8 py-3 whitespace-nowrap md:text-sm text-gray-600">
-                                        <Link to={`/informasi/?judul=${cell.getValue()}`} className='flex'>{flexRender(cell.column.columnDef.cell, cell.getContext())}</Link>
+                                        className="px-8 py-3 md:text-sm text-gray-600 
+                                        hover:text-primary-900 hover:border-b border-primary-900">
+                                        <Link to={`/informasi/?judul=${cell.getValue()}`}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</Link>
                                     </td>
                                     ))}
                                 </tr>

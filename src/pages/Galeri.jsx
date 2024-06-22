@@ -17,11 +17,11 @@ const Galeri = () => {
     return(
         <Layout 
             subhead="Galeri"
-            detail="galeri adalah blalalal"
+            detail="Kumpulan digital dari gambar dan video yang disusun dalam satu tempat untuk memudahkan akses dan penayangan. Biasanya digunakan untuk memamerkan karya, mendokumentasikan acara, atau menyimpan kenangan."
         >
 
             {/* Frame Galeri Video */}
-            <h3 className="font-semibold">Videografis Badan Pusat Statistik</h3>
+            <h1 className='text-2xl font-bold my-5'>Videografis PPID Provinsi NTB</h1>
             <div className="flex flex-col md:flex-row gap-4 mt-4 mb-5">
                 <iframe
                 src="https://www.youtube.com/embed/-BsGY4hvMBo?si=maZRHrewk3-oA01N"
