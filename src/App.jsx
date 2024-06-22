@@ -22,6 +22,7 @@ import InformasiSertaMerta from "./pages/si-ppid/informasi-serta-merta.jsx";
 import StrukturPPID from "./pages/profil/struktur-organisasi.jsx";
 import Statistik from "./pages/statistik/statistik.jsx";
 import SampleInformasi from "./pages/si-ppid/sample-informasi.jsx";
+import LaporanDetail from "./pages/laporan/laporan-detail.jsx";
 
 
 export default function App() {
@@ -38,6 +39,7 @@ export default function App() {
         <Route path="/laporan/tahunan-ppid" element={<LaporanTahunanPPID />}/>
         <Route path="/laporan/keuangan-prov-ntb" element={<LaporanKeuanganNTB />}/>
         <Route path="/laporan/lkjip-prov-ntb" element={<LaporanLKJIPNTB />}/>
+        <Route path="/laporan/detail" element={<LaporanDetail />}/>
         <Route path="/profil" element={<GambaranUmumPPID />}/>
         <Route path="/profil/gambaran-umum" element={<GambaranUmumPPID />}/>
         <Route path="/profil/tugas-fungsi" element={<TugasFungsiPPID />}/>

@@ -20,8 +20,9 @@ const SideMenu = ({konten, children}) => {
     const filteredMenu = listMenu.filter(item => item.konten === konten);
 
     return(
-        <div className="flex">
-            <div className="w-1/4 border-r-2" style={{ visibility: "visible" }}>
+        <div className="flex flex-col md:flex-row">
+            {/* <div className="w-1/4 border-r-2" style={{ visibility: "visible" }}> */}
+            <div className="md:w-1/4 border-r-2 md:border-r-0 md:border-r-2">
                 <div className="bg-white p-4">
                     <div className="font-bold mb-4 uppercase">{konten}</div>
                     {filteredMenu.map(({ path, submenu }) => (
@@ -30,7 +31,8 @@ const SideMenu = ({konten, children}) => {
                 </div>
             </div>
 
-            <div className="w-3/4" style={{ visibility: "visible" }}>
+            {/* <div className="w-3/4" style={{ visibility: "visible" }}> */}
+            <div className="w-full md:w-3/4">
                 <div className="bg-white p-4">
                     {children}
                 </div>  

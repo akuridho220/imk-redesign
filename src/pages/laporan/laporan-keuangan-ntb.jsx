@@ -5,17 +5,17 @@ import Card from "../../components/Card";
 
 const LaporanKeuanganNTB = () =>{
     const data = [
-        {judul: "Laporan blablaba", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"},
-        {judul: "Laporan blablaba1", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"},
-        {judul: "Laporan blablaba2", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"},
-        {judul: "Laporan blablaba3", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"},
-        {judul: "Laporan blablaba4", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"}
+        {judul: "Laporan Keuangan Provinsi NTB Tahun 2023", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"},
+        {judul: "Laporan Keuangan Provinsi NTB Tahun 2021", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"},
+        {judul: "Laporan Keuangan Provinsi NTB Tahun 2022", tgl: "20 Juni 2024", jenis: "Provinsi", path:"/laporan/detail"},
+        {judul: "Laporan Keuangan Provinsi NTB Tahun 2023", tgl: "20 Juni 2024", jenis: "Provinsi", path:"/laporan/detail"},
+        {judul: "Laporan Keuangan Provinsi NTB Tahun 2024", tgl: "20 Juni 2024", jenis: "Provinsi", path:"/laporan/detail"}
     ]
 
     return(
         <Layout 
-            subhead="Laporan"
-            detail="Detail laporan keuangan NTB"
+            subhead="Laporan Keuangan"
+            detail="Dokumen yang memuat informasi terperinci mengenai kondisi keuangan dan pengelolaan dana yang dilakukan oleh PPID Provinsi NTB selama satu tahun tertentu."
         >
             <SideMenu konten="laporan">
                 

@@ -12,8 +12,8 @@ const LaporanTahunanPPID = () =>{
     ]
     return(
         <Layout 
-            subhead="Laporan"
-            detail="Detail laporan tahunan PPID"
+            subhead="Laporan Tahunan"
+            detail="Laporan ini bertujuan untuk memberikan gambaran menyeluruh tentang kegiatan, kinerja, dan inisiatif yang telah dilakukan oleh PPID dalam mendukung transparansi dan akses informasi publik"
         >
             <SideMenu konten="laporan">
                 <div className="grid grid-cols-2 gap-4">

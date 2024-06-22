@@ -1,35 +1,26 @@
 import { useState } from 'react';
-import Card from "../../components/Card";
 import Layout from "../../components/Layout";
 import { useLocation } from 'react-router-dom';
 
-const BeritaDetail = () => {
-    const [isOpen, setIsOpen] = useState(false);
+const LaporanDetail = () => {
     const location = useLocation();// Panggil useLocation sebagai fungsi
     const { title } = location.state || {};
-
-    const data_pop = [
-        {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"},
-        {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "Provinsi", path:"/laporan/detail"},
-        {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "Pelatihan", path:"/laporan/detail"},
-        {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"},
-        {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"}
-    ]
+    const [showToast, setShowToast] = useState(false);
 
     return(
         <Layout 
-        subhead="Artikel Berita"
+        subhead="Detail Laporan"
     >
         
         {/* Breadcrumb */}
         <nav class="flex" aria-label="Breadcrumb">
         <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
             <li class="inline-flex items-center">
-            <a href="/berita" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
+            <a href="/laporan" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
                 <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                 <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
                 </svg>
-                Berita
+                Laporan
             </a>
             </li>
             <li aria-current="page">
@@ -37,7 +28,7 @@ const BeritaDetail = () => {
                 <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                 </svg>
-                <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Konten Berita</span>
+                <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Detail Laporan</span>
             </div>
             </li>
         </ol>
@@ -45,9 +36,31 @@ const BeritaDetail = () => {
 
         {/* Artikel Berita */}
         <div className="flex flex-col md:flex-row gap-8 py-6 ">
-            <div className="w-full md:w-2/3 lg:w-4/5">
+            <div className="w-full">
                 <div className="mt-4 p-8 bg-slate-100 rounded-xl w-full">
                     <h1 className='text-2xl font-bold mb-4'>SPBE terbaru NTB ditargetkan tuntas diakhir 2024</h1>
+                    <button className='p-3 bg-primary-900 text-md rounded-xl text-white hover:bg-blue-700 mb-2'
+                        onClick={() => setShowToast((state) => !state)}>
+                        Unduh Laporan
+                    </button>
+                    {showToast && (
+                        <div id="toast-success" class="flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-putih-200 rounded-lg shadow dark:text-gray-400 dark:bg-gray-800" role="alert">
+                        <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200">
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                            </svg>
+                            <span class="sr-only">Check icon</span>
+                        </div>
+                        <div class="ms-3 text-sm font-normal">Laporan berhasil diunduh <br /> `pura-pura aja`</div>
+                        <button type="button" class="ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700" data-dismiss-target="#toast-success" aria-label="Close"
+                            onClick={() =>setShowToast((state) => !state)}>
+                            <span class="sr-only">Close</span>
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                        </button>
+                    </div>
+                    )}
                     <div className="flex flex-row md:flex-col">
                         <div className="w-full">
                             <img
@@ -88,66 +101,9 @@ const BeritaDetail = () => {
 
             </div>
 
-
-        {/* Berita Populerr */}
-            <div className="w-full md:w-1/3 lg:w-1/5">
-              {/* hanya muncul saat mode layar kecil */}
-              <div className="max-sm:hidden">
-                <div className="mb-6">
-                    <h4>Berita Terpopuler</h4>
-                </div>
-                {/* <Card berita="populer"  /> */}
-                {data_pop.map(({ judul, tgl, jenis}) => (
-                      <Card berita="berita" judul={judul} tgl={tgl} jenis={jenis}/>
-                  ))}
-              </div>
-
-              {/* hanya muncul saat mode layar besar */}
-              <div className="w-full bg-grey rounded-lg p-3 md:hidden">
-                <div className="w-full bg-grey rounded-lg p-3">
-                    <button className="bg-slate-100 py-4 px-3 rounded-xl transition-all duration-100 w-full font-semibold flex justify-between items-center" type="button" onClick={() => setIsOpen(!isOpen)}>
-                        <div className="flex items-center gap-x-4">
-                            <div className="rounded-md bg-sp p-1">
-                            <div className="w-3 h-3">
-                                {/* ganti asset ttg beritaaa */}
-                                <div className="w-full aspect-square bg-contain bg-white" style={{ maskImage: 'url("/assets/icons/filter.svg")', maskRepeat: 'no-repeat', maskPosition: 'center center', maskSize: 'contain' }}></div>
-                            </div>
-                            </div>
-                            <p style={{ fontSize: '100%' }}>Filter Berita</p>
-                        </div>
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" className={`svg-inline--fa fa-chevron-down h-5 w-5 text-black flex-shrink-0 transition-transform ${isOpen ? 'transform rotate-180' : ''}`} role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path>
-                        </svg>
-                    </button>
-
-                  {/* Tampilan Populer saat width kecil */}
-                  <div className={`accordion-content ${isOpen ? 'block' : 'hidden'} transition-duration-150`}>
-                    <div className="my-3 flex flex-col">
-                      <div className="bg-grey px-1 rounded-xl flex flex-col pb-2">
-                        <div className="flex flex-col gap-y-4">
-                            <div className="flex flex-col px-1">
-                              {/* <div className="w-1/3">
-                                <img className="w-full h-125 rounded" src="https://picsum.photos/id/237/200/300" alt="" />
-                              </div>
-                              <div className="w-2/3 px-1 py-1">
-                                <h1 className='font-bold'>PPID Provinsi Jakarta menerima kunjungan</h1>
-                              </div> */}
-                              {data_pop.map(({ judul, tgl, jenis}) => (
-                                  <Card berita="berita" judul={judul} tgl={tgl} jenis={jenis}/>
-                              ))}
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
         </div>
     </Layout>
     )
 }
 
-export default BeritaDetail;
+export default LaporanDetail;

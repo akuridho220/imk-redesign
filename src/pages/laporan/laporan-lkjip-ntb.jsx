@@ -12,8 +12,8 @@ const LaporanLKJIPNTB = () =>{
     ]
     return(
         <Layout 
-            subhead="Laporan"
-            detail="Detail laporan LKJIP NTB"
+            subhead="Laporan LKjIP"
+            detail="Laporan ini menjadi salah satu instrumen penting dalam upaya meningkatkan transparansi dan akuntabilitas pemerintah daerah, serta memberikan akses informasi yang lebih luas kepada masyarakat"
         >
             <SideMenu konten="laporan">
                 <div className="grid grid-cols-2 gap-4">
