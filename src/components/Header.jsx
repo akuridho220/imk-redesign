@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <div>
             <header className="bg-white border-gray-200 dark:bg-gray-900 mx-10" >
-                <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+                <div className="flex flex-col md:flex-row justify-between items-center md:mx-auto max-w-screen-xl p-4">
                     <Link to={"/"} className="flex items-center space-x-3 rtl:space-x-reverse">
                         <img src="..\src\assets\img\logo\logoPPIDNTB.png" className="h-16" alt="PPID Logo" />
                     </Link>
@@ -52,7 +52,7 @@ const Header = () => {
                         <div className='flex flex-row items-center justify-between'>
                             <Link to="https://ntbprov.go.id/" target="_blank" className="flex flex-row items-center justify-between">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#365177" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                                <div className="flex flex-col px-4 text-tertiary-900">
+                                <div className="md:flex flex-col px-4 text-tertiary-900 hidden md:visible">
                                     <p>WEBSITE UTAMA</p>
                                     <p>NTBPROV.GO.ID</p>
                                 </div>
