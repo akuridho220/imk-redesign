@@ -84,8 +84,8 @@ const Statistik = () => {
 
     return (
         <div className="content w-full flex flex-col items-center md:m-4">
-            <BoxHeader title="Statistik" />
-            <div className="flex flex-col divide-y">
+            {/* <BoxHeader title="Statistik" /> */}
+            <div className="flex flex-col divide-y my-5">
                 <div className="">
                     <Chart 
                         options={options1}
@@ -94,7 +94,7 @@ const Statistik = () => {
                         width="800"
                     />
                 </div>
-                <div className="">
+                <div className="mt-10">
                     <Chart 
                         options={options2}
                         series={series2}
