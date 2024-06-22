@@ -9,12 +9,12 @@ const BeritaDetail = () => {
     const { title } = location.state || {};
 
     const data_pop = [
-        {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"},
-        {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "Provinsi", path:"/laporan/detail"},
-        {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "Pelatihan", path:"/laporan/detail"},
-        {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"},
-        {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"}
-    ]
+        {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2025", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"},
+        {judul: "PPID, Sarana Efektif Pendukung Transformasi Digitall", tgl: "20 Juni 2024", jenis: "Provinsi", path:"/laporan/detail"},
+        {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2026", tgl: "20 Juni 2024", jenis: "Pelatihan", path:"/laporan/detail"},
+        {judul: "PPID, Sarana Efektif Pendukung Transformasi Digital", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"},
+        {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2027", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"}
+      ]
 
     return(
         <Layout 
@@ -51,13 +51,13 @@ const BeritaDetail = () => {
                     <div className="flex flex-row md:flex-col">
                         <div className="w-full">
                             <img
-                                alt=""
+                                alt="Random Image"
                                 loading="lazy"
                                 width="1080"
                                 height="1080"
                                 className="rounded-md md:float-left md:w-1/3 md:mr-4 mb-4 md:mb-0"
                                 style={{ color: 'transparent' }}
-                                src="https://picsum.photos/id/237/200/300"
+                                src={`https://picsum.photos/seed/${title}/200/300`}
                             />
                             <p style={{ fontSize: '16px' }}>
                                 21 Juni 2024 | Kegiatan Statistik Lainnya

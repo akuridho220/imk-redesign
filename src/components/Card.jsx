@@ -17,13 +17,13 @@ const Card = (props) => {
                     <div className="flex gap-4 flex-col md:flex-row">
                         <div className="w-full md:w-1/6">
                             <img 
-                                alt={props.judul}
+                                alt="Random Image"
                                 width="1080" 
                                 height="1080" 
                                 decoding="async" 
                                 data-nimg="1" 
                                 className="rounded-md object-cover object-top h-full w-full" 
-                                src="https://picsum.photos/id/237/200/300"
+                                src={`https://picsum.photos/seed/${props.judul}/200/300`}
                                 style={{ color: "transparent" }} 
                             />
                         </div>
@@ -47,7 +47,7 @@ const Card = (props) => {
                 <div className="flex flex-col">
                     <div className="flex flex-row">
                       <div className="w-1/3">
-                        <img className=" rounded" src="https://picsum.photos/id/237/120/150" alt="" />
+                        <img className=" rounded" src={`https://picsum.photos/seed/${props.judul}/200/300`} alt="Random Image" />
                       </div>
                       <div className="w-2/3 ml-1 flex flex-row flex-wrap mt-1">
                         <small className='font-bold text-xs tracking-tight'>PPID Provinsi Jakarta menerima kunjungan</small>

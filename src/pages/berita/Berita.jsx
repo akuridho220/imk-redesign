@@ -14,25 +14,25 @@ const Berita = () => {
   const [data] = useState([
     { judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2021", tgl: "20 Juni 2021", jenis: "PPID" },
     { judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2021", tgl: "20 Juni 2021", jenis: "Provinsi" },
-    { judul: "Diskominfotik targetkan 100% Badan Publik NTB diakhir 2022", tgl: "20 Juni 2022", jenis: "Pelatihan" },
+    { judul: "Diskominfotik targetkan 100 persen Badan Publik NTB diakhir 2022", tgl: "20 Juni 2022", jenis: "Pelatihan" },
     { judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2022", tgl: "20 Juni 2022", jenis: "PPID" },
     { judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2023", tgl: "20 Juni 2023", jenis: "Provinsi" },
-    { judul: "Diskominfotik targetkan 100% Badan Publik NTB diakhir 2023", tgl: "20 Juni 2023", jenis: "Pelatihan" },
+    { judul: "Diskominfotik targetkan 100 persen Badan Publik NTB diakhir 2023", tgl: "20 Juni 2023", jenis: "Pelatihan" },
     { judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "PPID" },
     { judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "PPID" },
-    { judul: "Diskominfotik targetkan 100% Badan Publik NTB diakhir 2021", tgl: "20 Juni 2021", jenis: "PPID" },
-    { judul: "Diskominfotik targetkan 100% Badan Publik NTB diakhir 2021", tgl: "20 Juni 2021", jenis: "Provinsi" },
-    { judul: "Diskominfotik targetkan 100% Badan Publik NTB diakhir 2022", tgl: "20 Juni 2022", jenis: "Pelatihan" },
+    { judul: "Diskominfotik targetkan 100 persen Badan Publik NTB diakhir 2021", tgl: "20 Juni 2021", jenis: "PPID" },
+    { judul: "Diskominfotik targetkan 100 persen Badan Publik NTB diakhir 2021", tgl: "20 Juni 2021", jenis: "Provinsi" },
+    { judul: "Diskominfotik targetkan 100 persen Badan Publik NTB diakhir 2022", tgl: "20 Juni 2022", jenis: "Pelatihan" },
     { judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2022", tgl: "20 Juni 2022", jenis: "PPID" },
     { judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2023", tgl: "20 Juni 2023", jenis: "Provinsi" },
     { judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2023", tgl: "20 Juni 2023", jenis: "Pelatihan" },
     { judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "PPID" },
-    { judul: "Diskominfotik targetkan 100% Badan Publik NTB diakhir 2024", tgl: "20 Juni 2024", jenis: "PPID" },
+    { judul: "Diskominfotik targetkan 100 persen Badan Publik NTB diakhir 2024", tgl: "20 Juni 2024", jenis: "PPID" },
     { judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2021", tgl: "20 Juni 2021", jenis: "PPID" },
     { judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2021", tgl: "20 Juni 2021", jenis: "Provinsi" },
-    { judul: "Diskominfotik targetkan 100% Badan Publik NTB diakhir 2022", tgl: "20 Juni 2022", jenis: "Pelatihan" },
-    { judul: "Diskominfotik targetkan 100% Badan Publik NTB diakhir 2022", tgl: "20 Juni 2022", jenis: "PPID" },
-    { judul: "Diskominfotik targetkan 100% Badan Publik NTB diakhir 2023", tgl: "20 Juni 2023", jenis: "Provinsi" },
+    { judul: "Diskominfotik targetkan 100 persen Badan Publik NTB diakhir 2022", tgl: "20 Juni 2022", jenis: "Pelatihan" },
+    { judul: "Diskominfotik targetkan 100 persen Badan Publik NTB diakhir 2022", tgl: "20 Juni 2022", jenis: "PPID" },
+    { judul: "Diskominfotik targetkan 100 persen Badan Publik NTB diakhir 2023", tgl: "20 Juni 2023", jenis: "Provinsi" },
     { judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2023", tgl: "20 Juni 2023", jenis: "Pelatihan" },
     { judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "PPID" },
     { judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "PPID" }
@@ -57,11 +57,11 @@ const Berita = () => {
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
   const data_pop = [
-    {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"},
-    {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "Provinsi", path:"/laporan/detail"},
-    {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "Pelatihan", path:"/laporan/detail"},
-    {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"},
-    {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2024", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"}
+    {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2025", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"},
+    {judul: "PPID, Sarana Efektif Pendukung Transformasi Digitall", tgl: "20 Juni 2024", jenis: "Provinsi", path:"/laporan/detail"},
+    {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2026", tgl: "20 Juni 2024", jenis: "Pelatihan", path:"/laporan/detail"},
+    {judul: "PPID, Sarana Efektif Pendukung Transformasi Digital", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"},
+    {judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2027", tgl: "20 Juni 2024", jenis: "PPID", path:"/laporan/detail"}
   ]
 
   return (
@@ -130,7 +130,7 @@ const Berita = () => {
                                 <div className="w-full aspect-square bg-contain bg-white" style={{ maskImage: 'url("/assets/icons/filter.svg")', maskRepeat: 'no-repeat', maskPosition: 'center center', maskSize: 'contain' }}></div>
                             </div>
                             </div>
-                            <p style={{ fontSize: '100%' }}>Filter Berita</p>
+                            <p style={{ fontSize: '100 persen' }}>Filter Berita</p>
                         </div>
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" className={`svg-inline--fa fa-chevron-down h-5 w-5 text-black flex-shrink-0 transition-transform ${isOpen ? 'transform rotate-180' : ''}`} role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path>

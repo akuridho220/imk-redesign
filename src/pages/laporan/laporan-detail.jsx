@@ -64,13 +64,13 @@ const LaporanDetail = () => {
                     <div className="flex flex-row md:flex-col">
                         <div className="w-full">
                             <img
-                                alt=""
+                                alt="Random Image"
                                 loading="lazy"
                                 width="1080"
                                 height="1080"
                                 className="rounded-md md:float-left md:w-1/3 md:mr-4 mb-4 md:mb-0"
                                 style={{ color: 'transparent' }}
-                                src="https://picsum.photos/id/237/200/300"
+                                src={`https://picsum.photos/seed/${title}/200/300`}
                             />
                             <p style={{ fontSize: '16px' }}>
                                 21 Juni 2024 | Kegiatan Statistik Lainnya

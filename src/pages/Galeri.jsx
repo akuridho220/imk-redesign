@@ -41,23 +41,23 @@ const Galeri = () => {
 
 
             {/* Frame Galeri Foto */}
-            <div className="rounded-full bg-red-500 py-2">
-                <h1 className="text-center">Galeri PPID NTB</h1>
+            <div className="rounded-full bg-primary-900 py-2 mt-10">
+                <h1 className="text-center text-putih-100">Galeri PPID NTB</h1>
             </div>
             <div>
                 {/* Links */}
-                <ul className="flex flex-row flex-wrap items-center justify-center sm:grid-cols">
+                <ul className="flex flex-row flex-wrap items-center justify-center sm:grid-cols mt-4">
                     <li className="mx-5">
-                        <button className={`px-4 py-2 border-b-4 ${kategori === 'semua' ? 'border-none bg-red-400 rounded-full text-white' : 'text-black'}`} onClick={() => ubahKategori('semua')}>Semua</button>
+                        <button className={`px-4 py-2 border-b-4 border-primary-900 ${kategori === 'semua' ? 'border-none bg-primary-900 rounded-full text-white' : 'text-black'}`} onClick={() => ubahKategori('semua')}>Semua</button>
                     </li>
                     <li className="mx-5">
-                        <button className={`px-4 py-2 border-b-4 ${kategori === 'rapat' ? 'border-none bg-red-400 rounded-full text-white' : 'text-black'}`} onClick={() => ubahKategori('rapat')}>Rapat</button>
+                        <button className={`px-4 py-2 border-b-4 border-primary-900 ${kategori === 'rapat' ? 'border-none bg-primary-900 rounded-full text-white' : 'text-black'}`} onClick={() => ubahKategori('rapat')}>Rapat</button>
                     </li>
                     <li className="mx-5">
-                        <button className={`px-4 py-2 border-b-4 ${kategori === 'pelatihan' ? 'border-none bg-red-400 rounded-full text-white' : 'text-black'}`} onClick={() => ubahKategori('pelatihan')}>Pelatihan</button>
+                        <button className={`px-4 py-2 border-b-4 border-primary-900 ${kategori === 'pelatihan' ? 'border-none bg-primary-900 rounded-full text-white' : 'text-black'}`} onClick={() => ubahKategori('pelatihan')}>Pelatihan</button>
                     </li>
                     <li className="mx-5">
-                        <button className={`px-4 py-2 border-b-4 ${kategori === 'dbip' ? 'border-none bg-red-400 rounded-full text-white' : 'text-black'}`} onClick={() => ubahKategori('dbip')}>DBIP</button>
+                        <button className={`px-4 py-2 border-b-4 border-primary-900 ${kategori === 'dbip' ? 'border-none bg-primary-900 rounded-full text-white' : 'text-black'}`} onClick={() => ubahKategori('dbip')}>DBIP</button>
                     </li>
                 </ul>
 
