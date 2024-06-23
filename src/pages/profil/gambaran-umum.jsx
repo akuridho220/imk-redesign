@@ -9,7 +9,7 @@ const GambaranUmumPPID = () =>{
                     <p className="font-bold text-footer-900 text-xl md:text-2xl mb-2">Gambaran Umum PPID Provinsi NTB</p>
                     <div className="flex flex-col md:flex-row mb-10">
                         <div className="md:mx-4 mx-2">
-                            <img src="..\public\images\RuangUtamaPelayanan2.jpg" 
+                            <img src="/images/RuangUtamaPelayanan2.jpg" 
                                 alt="ruang utama" 
                                 className="w-full h-full md:w-1/2 md:mx-4 md:float-left"/>    
                             <p className="font-bold text-footer-900 text-lg">Latar Belakang</p>

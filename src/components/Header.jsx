@@ -23,7 +23,7 @@ const Header = () => {
             <header className="bg-white border-gray-200 dark:bg-gray-900 mx-10" >
                 <div className="flex flex-col md:flex-row justify-between items-center md:mx-auto max-w-screen-xl p-4">
                     <Link to={"/"} className="flex items-center space-x-3 rtl:space-x-reverse">
-                        <img src="..\public\images\logoPPIDNTB.png" className="h-16" alt="PPID Logo" />
+                        <img src="/images/logoPPIDNTB.png" className="h-16" alt="PPID Logo" />
                     </Link>
                     <div className="flex items-center space-x-6 rtl:space-x-reverse">
                         <ul className='flex flex-row'>

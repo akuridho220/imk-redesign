@@ -7,8 +7,8 @@ import Card from '../components/Card';
 const Home = () => {
     const navigate = useNavigate();
     const slides = [
-        "../public/images/LobbyPendaftaran.jpg",
-        "../public/images/RuangUtamaPelayanan2.jpg",
+        "/images/LobbyPendaftaran.jpg",
+        "/images/RuangUtamaPelayanan2.jpg",
     ];
 
     const statistiks = [
