@@ -10,7 +10,9 @@ const VisiMisiPPID = () =>{
                     <img 
                         src="/images/VisiMisi-PPIDNTB.jpeg" 
                         alt="visi misi" 
-                        className="w-full"/>
+                        className="w-full"
+                        loading="lazy"/>
+                        
                 </div>
             </SideMenu>
         </Layout>

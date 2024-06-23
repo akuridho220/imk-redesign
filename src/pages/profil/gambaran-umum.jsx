@@ -11,7 +11,8 @@ const GambaranUmumPPID = () =>{
                         <div className="md:mx-4 mx-2">
                             <img src="/images/RuangUtamaPelayanan2.jpg" 
                                 alt="ruang utama" 
-                                className="w-full h-full md:w-1/2 md:mx-4 md:float-left"/>    
+                                className="w-full h-full md:w-1/2 md:mx-4 md:float-left"
+                                loading="lazy"/>    
                             <p className="font-bold text-footer-900 text-lg">Latar Belakang</p>
                             <p className="text-justify">Keterbukaan Informasi Publik merupakan aspek yang penting dalam rangka mewujudkan penyelenggaraan negara transparan. Oleh karena itu adalah hak publik untuk memperoleh Informasi sesuai dengan peraturan perundang¬undangan. Hak atas Informasi. Hak setiap Orang untuk memperoleh Informasi juga relevan untuk meningkatkan keterlibatan masyarakat dalam proses pengambilan keputusan publik. Partisipasi masyarakat dapat terlaksana apabila adanya jaminan akan Keterbukaan Informasi Publik.</p>
                         </div>

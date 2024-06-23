@@ -9,7 +9,8 @@ const StrukturPPID = () =>{
                     <p className="font-bold text-footer-900 text-xl md:text-2xl mb-2">Struktur Organisasi PPID NTB</p>
                     <img src="/images/SrukturOrganisasiPPIDNTB.png" 
                         alt="struktur organisasi" 
-                        className="w-full"/>
+                        className="w-full"
+                        loading="lazy"/>
                 </div>
             </SideMenu>
         </Layout>

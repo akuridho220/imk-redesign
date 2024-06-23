@@ -174,8 +174,8 @@ const Home = () => {
                             <div className='w-full flex flex-col items-center md:px-10 md:py-4 bg-slate-100 roundel-lg' key={index}>
                                 <p className='font-bold text-footer-900 text-lg p-2 md:p-4'>{statistik.title}</p>
                                 <div className='w-full flex flex-col md:flex-row items-center'>
-                                    {statistik.data.map((stat) => (
-                                        <div className='flex flex-col w-2/5 md:w-full bg-blue-200 m-4 items-center rounded-lg p-2 md:p-4'>
+                                    {statistik.data.map((stat, i) => (
+                                        <div className='flex flex-col w-2/5 md:w-full bg-blue-200 m-4 items-center rounded-lg p-2 md:p-4' key={i}>
                                             <p className='font-medium text-footer-900 md:text-xl text-base'>{stat.value}</p>
                                             <p className='font-bold text-footer-900 md:text-base text-xs'>{stat.name}</p>
                                         </div>
