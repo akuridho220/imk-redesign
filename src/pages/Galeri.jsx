@@ -3,6 +3,10 @@ import Layout from "../components/Layout";
 import VideoThumbnail from "../components/VideoThumbnail";
 import FotoThumbnail from "../components/FotoThumbnail";
 import { useState } from "react";
+import foto1 from '../assets/img/images/foto-thumb1.jpg';
+import foto2 from '../assets/img/images/foto-thumb2.jpg';
+import foto3 from '../assets/img/images/foto-thumb3.jpeg';
+import foto4 from '../assets/img/images/foto-thumb4.jpg';
 
 const Galeri = () => {
     const location = useLocation();
@@ -32,10 +36,10 @@ const Galeri = () => {
                 ></iframe>
 
                 <div className="inline-flex md:flex-col gap-4 max-sm:overflow-x-auto no-scrollbar max-sm:-mx-4 max-sm:px-4">
-                    <VideoThumbnail />
-                    <VideoThumbnail />
-                    <VideoThumbnail />
-                    <VideoThumbnail />
+                    <VideoThumbnail foto={foto1} />
+                    <VideoThumbnail foto={foto2} />
+                    <VideoThumbnail foto={foto3} />
+                    <VideoThumbnail foto={foto4} />
                 </div>
             </div>
 
