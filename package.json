@@ -18,8 +18,7 @@
     "react-apexcharts": "^1.4.1",
     "react-card-slider-component": "^1.0.9",
     "react-dom": "^18.2.0",
-    "react-feather": "^2.0.10",
-    "react-iframe": "^1.8.5"
+    "react-feather": "^2.0.10"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
