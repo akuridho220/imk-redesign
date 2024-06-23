@@ -22,7 +22,7 @@ const SideMenu = ({konten, children}) => {
     return(
         <div className="flex flex-col md:flex-row">
             {/* <div className="w-1/4 border-r-2" style={{ visibility: "visible" }}> */}
-            <div className="md:w-1/4 border-r-2 md:border-r-0 md:border-r-2">
+            <div className="md:w-1/4 border-r-2 md:border-r-0">
                 <div className="bg-white p-4">
                     <div className="font-bold mb-4 uppercase">{konten}</div>
                     {filteredMenu.map(({ path, submenu }) => (

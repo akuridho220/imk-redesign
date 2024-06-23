@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import Card from "../../components/Card";
 import Layout from "../../components/Layout";
-import { Link } from 'react-router-dom';
-import { AccordionContent } from 'flowbite-react';
 
 const Berita = () => {
   const [isOpen, setIsOpen] = useState(false);
