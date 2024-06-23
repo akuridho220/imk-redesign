@@ -7,7 +7,7 @@ const TugasFungsiPPID = () =>{
             <SideMenu konten="profil">
                 <div className="flex flex-col">
                     <p className="font-bold text-footer-900 text-xl md:text-2xl mb-2">Tugas dan Fungsi PPID NTB</p>
-                    <img src="..\src\assets\img\images\TugasFungsiPPIDNTB.jpeg" alt="tugas pokok dan fungsi" />
+                    <img src="..\public\images\TugasFungsiPPIDNTB.jpeg" alt="tugas pokok dan fungsi" />
                     <div className="mx-2 md:mx-4 text-justify mb-5">
                         <p className="font-bold text-footer-900 text-lg">Tugas Pokok dan Fungsi</p>
                         <p>Sesuai dengan Peraturan Gubernur Nomor 35 tahun 2012 dan Surat Keputusan Gubernur Nusa Tenggara Barat Nomor 550-559 Tahun 2016 dan perubahannya , tentang Pejabat Pengelola Informasi  dan Dokumentasi Provinsi Nusa Tenggara Barat Masa Bhakti 2016-2020, <span>Tugas pokok PPID Provinsi NTB</span> adalah sebagai berikut</p>
