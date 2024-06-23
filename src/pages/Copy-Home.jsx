@@ -2,11 +2,63 @@ import React from 'react';
 import Carousel from '../components/Carousel';
 import SingleItemCarousel from '../components/SingleItemCarousel';
 
-const Home = () => {
+const CopyHome = () => {
     const slides = [
         "../src/assets/img/images/LobbyPendaftaran.jpg",
         "../src/assets/img/images/RuangUtamaPelayanan2.jpg",
     ];
+
+    const statistiks = [
+        {
+            title: "Statistik Informasi Publik",
+            data : [
+                {
+                    name: "DIP Berkala",
+                    value: 1447,
+                },
+                {
+                    name: "DIP Serta Merta",
+                    value: 61,
+                },
+                {
+                    name: "DIP Setiap Saat",
+                    value: 194,
+                },
+            ]       
+        },
+        {
+            title: "Statistik Permohonan Informasi",
+            data: [
+                {
+                    name: "Menunggu",
+                    value: 16,
+                },
+                {
+                    name: "Diproses",
+                    value: 7,
+                },
+                {
+                    name: "Dipenuhi",
+                    value: 121,
+                },
+                {
+                    name: "Ditolak",
+                    value: 12,
+                },
+            ]
+        }
+    ]
+
+    const xs = [
+        {
+            title: "Statistik 1",
+            data : ["1","2","3"]
+        },
+        {
+            title: "Statistik 2",
+            data: ["1","2","3","4"]
+        }
+    ]
 
     const newsItems = [
         {
@@ -83,8 +135,25 @@ const Home = () => {
                     </SingleItemCarousel>
                 </div>
             </div>
+            <div>
+                <Carousel autoSlide={true} autoSlideInterval={3000}>
+                    {statistiks.map((statistik, index) => (
+                        <div className='w-full flex flex-col items-center md:px-10 md:py-4' key={index}>
+                            <p className='font-bold text-footer-900 text-lg'>{statistik.title}</p>
+                            <div className='w-full flex flex-row'>
+                                {statistik.data.map((stat) => (
+                                    <div className='flex flex-col w-full bg-blue-200 m-4 items-center rounded-lg p-2 md:p-4'>
+                                        <p>{stat.value}</p>
+                                        <p>{stat.name}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                </Carousel>
+            </div>
         </div>
     );
 }
 
-export default Home;
+export default CopyHome;

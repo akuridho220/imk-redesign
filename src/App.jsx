@@ -20,6 +20,7 @@ import StrukturPPID from "./pages/profil/struktur-organisasi.jsx";
 import Statistik from "./pages/statistik/statistik.jsx";
 import SampleInformasi from "./pages/si-ppid/sample-informasi.jsx";
 import LaporanDetail from "./pages/laporan/laporan-detail.jsx";
+import CopyHome from "./pages/Copy-Home.jsx";
 
 
 export default function App() {
@@ -48,6 +49,7 @@ export default function App() {
         <Route path="/kontak" element={<Kontak />}/>
         <Route path="/statistik" element={<Statistik />} />
         <Route path="/informasi" element={<SampleInformasi />} />
+        <Route path="/home/copy" element={< CopyHome />} />
 
         {/* tambahin route yg lain */}
       </Routes>
