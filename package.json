@@ -18,7 +18,9 @@
     "react-apexcharts": "^1.4.1",
     "react-card-slider-component": "^1.0.9",
     "react-dom": "^18.2.0",
-    "react-feather": "^2.0.10"
+    "react-feather": "^2.0.10",
+    "react-paginate": "^8.2.0",
+    "react-table": "^7.8.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
