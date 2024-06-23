@@ -3,9 +3,13 @@ import Footer from "./components/Footer"
 import { Outlet} from "react-router-dom";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from './pages/Home.jsx';
+import FormulirPermohonanInformasi from './pages/formulir/FormulirPermohonanInformasi.jsx';
+import FormulirPengajuanKeberatan from './pages/formulir/FormulirPengajuanKeberatan.jsx';
 import LaporanTahunanPPID from "./pages/laporan/laporan-tahunan-ppid.jsx";
 import LaporanKeuanganNTB from "./pages/laporan/laporan-keuangan-ntb.jsx";
 import LaporanLKJIPNTB from "./pages/laporan/laporan-lkjip-ntb.jsx";
+import LaporanPelayananKeberatan from "./pages/laporan/laporan-pelayanan-keberatan.jsx";
+import LaporanPelayananInformasi from "./pages/laporan/laporan-pelayanan-informasi.jsx";
 import GambaranUmumPPID from "./pages/profil/gambaran-umum.jsx";
 import TugasFungsiPPID from "./pages/profil/tugas-fungsi.jsx";
 import VisiMisiPPID from "./pages/profil/visi-misi.jsx";
@@ -29,6 +33,8 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />}/>
+        <Route path="/formulir/permohonan-informasi" element={<FormulirPermohonanInformasi />}/>
+        <Route path="/formulir/pengajuan-keberatan" element={<FormulirPengajuanKeberatan />}/>
         <Route path="/si-ppid" element={<Navigate to="/si-ppid/informasi-setiap-saat" />}/>
         <Route path="/si-ppid/informasi-setiap-saat" element={<InformasiSetiapSaat />}/>
         <Route path="/si-ppid/informasi-berkala" element={<InformasiBerkala />}/>
@@ -38,6 +44,8 @@ export default function App() {
         <Route path="/laporan/keuangan-prov-ntb" element={<LaporanKeuanganNTB />}/>
         <Route path="/laporan/lkjip-prov-ntb" element={<LaporanLKJIPNTB />}/>
         <Route path="/laporan/detail" element={<LaporanDetail />}/>
+        <Route path="/laporan/pelayanan-keberatan" element={<LaporanPelayananKeberatan />}/>
+        <Route path="/laporan/pelayanan-informasi" element={<LaporanPelayananInformasi />}/>
         <Route path="/profil" element={<Navigate to="/profil/gambaran-umum" />}/>
         <Route path="/profil/gambaran-umum" element={<GambaranUmumPPID />}/>
         <Route path="/profil/tugas-fungsi" element={<TugasFungsiPPID />}/>
