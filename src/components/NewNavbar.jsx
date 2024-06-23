@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const NewNavbar = () => {
 
     return (
@@ -10,28 +12,28 @@ const NewNavbar = () => {
                         <nav className="w-full mx-auto">
                             <ul className="w-full justofy-items-center md:flex flex-col md:flex-row items-center justify-center text-base text-gray-700 pt-4 lg:pt-0 md:gap-8">
                                 <li className="flex items-center justify-center">
-                                    <a href="/" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center" aria-current="page">BERANDA</a>
+                                    <Link to="/" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center" aria-current="page">BERANDA</Link>
                                 </li>
                                 <li className="flex items-center justify-center">
-                                    <a href="/si-ppid" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">SI PPID</a>
+                                    <Link to="/si-ppid" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">SI PPID</Link>
                                 </li>
                                 <li className="flex items-center justify-center">
-                                    <a href="/profil" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">PROFIL</a>
+                                    <Link to="/profil" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">PROFIL</Link>
                                 </li>
                                 <li className="flex items-center justify-center">
-                                    <a href="/laporan" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">LAPORAN</a>
+                                    <Link to="/laporan" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">LAPORAN</Link>
                                 </li>
                                 <li className="flex items-center justify-center">
-                                    <a href="/berita" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">BERITA</a>
+                                    <Link to="/berita" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">BERITA</Link>
                                 </li>
                                 <li className="flex items-center justify-center">
-                                    <a href="/galeri" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">GALERI</a>
+                                    <Link to="/galeri" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">GALERI</Link>
                                 </li>
                                 <li className="flex items-center justify-center">
-                                    <a href="/statistik" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">STATISTIK</a>
+                                    <Link to="/statistik" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">STATISTIK</Link>
                                 </li>
                                 <li className="flex items-center justify-center">
-                                    <a href="/kontak" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">HUBUNGI KAMI</a>
+                                    <Link to="/kontak" className="text-white bg-tertiary-900 hover:bg-white hover:text-tertiary-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">HUBUNGI KAMI</Link>
                                 </li>
                             </ul>
                         </nav>
