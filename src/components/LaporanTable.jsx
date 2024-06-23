@@ -2,10 +2,8 @@
 import { getCoreRowModel, useReactTable, flexRender, getPaginationRowModel, getSortedRowModel, getFilteredRowModel } from '@tanstack/react-table';
 import { useState } from 'react';
 import * as Icon from 'react-feather';
-import { Link } from 'react-router-dom';
-//import { cn } from '@nextui-org/react';
 
-function BasicTable({ data, columns }) {
+function LaporanTable({ data, columns }) {
     const [sorting, setSorting] = useState([]);
     const [filtering, setFiltering] = useState('');
 
@@ -65,7 +63,7 @@ function BasicTable({ data, columns }) {
                                     <td key={cell.id} 
                                         className="px-8 py-3 md:text-sm text-gray-600 
                                         hover:text-primary-900 hover:border-b border-primary-900">
-                                        <Link to={`/informasi/?judul=${cell.getValue()}`}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</Link>
+                                        <p className=''>{flexRender(cell.column.columnDef.cell, cell.getContext())}</p>
                                     </td>
                                     ))}
                                 </tr>
@@ -100,4 +98,4 @@ function BasicTable({ data, columns }) {
     );
 }
 
-export default BasicTable;
+export default LaporanTable;

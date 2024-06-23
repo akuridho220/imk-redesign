@@ -11,6 +11,47 @@ const Home = () => {
         "../src/assets/img/images/RuangUtamaPelayanan2.jpg",
     ];
 
+    const statistiks = [
+        {
+            title: "Statistik Informasi Publik",
+            data : [
+                {
+                    name: "DIP Berkala",
+                    value: 1447,
+                },
+                {
+                    name: "DIP Serta Merta",
+                    value: 61,
+                },
+                {
+                    name: "DIP Setiap Saat",
+                    value: 194,
+                },
+            ]       
+        },
+        {
+            title: "Statistik Permohonan Informasi",
+            data: [
+                {
+                    name: "Menunggu",
+                    value: 16,
+                },
+                {
+                    name: "Diproses",
+                    value: 7,
+                },
+                {
+                    name: "Dipenuhi",
+                    value: 121,
+                },
+                {
+                    name: "Ditolak",
+                    value: 12,
+                },
+            ]
+        }
+    ]
+
     const latestNews = [
         { judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2021", tgl: "20 Juni 2021", jenis: "PPID", path: "/berita/detail" },
         { judul: "SPBE terbaru NTB ditargetkan tuntas diakhir 2021", tgl: "20 Juni 2021", jenis: "Provinsi", path: "/berita/detail" },
@@ -83,7 +124,7 @@ const Home = () => {
             <div className="mt-16 px-20">
                 <h2 className="flex justify-center text-xl font-bold ">Berita Terbaru</h2>
                 <p className="flex justify-center mb-6">Berikut daftar berita terkini dari kegiatan Pejabat Pengelola Informasi dan Dokumentasi NTB.</p>
-                <div className="grid grid-cols-2 gap-6 h-80 ">
+                <div className="grid grid-cols-2 gap-6 h-60 ">
                     <div>
                         <SingleItemCarousel
                             autoSlide={true}
@@ -120,6 +161,23 @@ const Home = () => {
                             ))}
                         </SingleItemCarousel>
                     </div>
+                </div>
+                <div>
+                    <Carousel autoSlide={true} autoSlideInterval={3000}>
+                        {statistiks.map((statistik, index) => (
+                            <div className='w-full flex flex-col items-center md:px-10 md:py-4 bg-slate-100 roundel-lg' key={index}>
+                                <p className='font-bold text-footer-900 text-lg'>{statistik.title}</p>
+                                <div className='w-full flex flex-row'>
+                                    {statistik.data.map((stat) => (
+                                        <div className='flex flex-col w-full bg-blue-200 m-4 items-center rounded-lg p-2 md:p-4'>
+                                            <p className='font-medium text-footer-900 text-xl'>{stat.value}</p>
+                                            <p className='font-bold text-footer-900'>{stat.name}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </Carousel>
                 </div>
             </div>
         </div>
