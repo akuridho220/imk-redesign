@@ -53,7 +53,7 @@ const LaporanPelayananKeberatan = () => {
     ];
 
     return (
-        <div className="content w-full flex flex-col items-center mx-auto md:m-4">
+        <div className="content w-full flex flex-col md:items-center mx-auto md:m-4">
             <div className='flex flex-col md:w-4/5 bg-slate-100 rounded-lg p-2 md:p-4'>
                 <h1 className="text-2xl font-bold mb-4">Laporan Pelayanan Keberatan</h1>
                 <LaporanTable columns={columns} data={data}/>

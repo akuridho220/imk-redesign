@@ -34,6 +34,38 @@ const Statistik = () => {
             }
         },
     }
+    const options1_hp = {
+        chart : {
+            id: "basic-bar",
+        },
+        xaxis: {
+            categories: ["DIP Berkala","DIP Serta Merta", "DIP Setiap Saat"]
+        },
+        title:{
+            text: "Statistik Informasi Publik",
+            floating: true,
+            align: "center",
+            style: {
+                fontSize: '16px',
+            }
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 10,
+                dataLabels: {
+                    position: 'top', // top, center, bottom
+                },
+            }
+        },
+        dataLabels: {
+            enabled: true,
+            offsetY: -20,
+            style: {
+                fontSize: '12px',
+                colors: ["#304758"]
+            }
+        },
+    }
     const series1 = [
         {
             name : "Statistik Informasi Publik",
@@ -73,6 +105,38 @@ const Statistik = () => {
             }
         }
     }
+    const options2_hp = {
+        chart : {
+            id: "basic-bar",
+        },
+        xaxis: {
+            categories: ["Menunggu","Diproses", "Dipenuhi", "Ditolak"]
+        },
+        title:{
+            text: "Statistik Permohonan Informasi",
+            floating: true,
+            align: "center",
+            style: {
+                fontSize: '16px',
+            }
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 10,
+                dataLabels: {
+                    position: 'top', // top, center, bottom
+                },
+            }
+        },
+        dataLabels: {
+            enabled: true,
+            offsetY: -20,
+            style: {
+                fontSize: '12px',
+                colors: ["#304758"]
+            }
+        }
+    }
 
     const series2 = [
         {
@@ -83,10 +147,11 @@ const Statistik = () => {
 
 
     return (
-        <div className="content w-full flex flex-col items-center md:m-4">
+        <div className="content w-full flex flex-col md:items-center md:m-4">
             {/* <BoxHeader title="Statistik" /> */}
             <div className="flex flex-col divide-y my-5">
-                <div className="">
+                {/* PC */}
+                <div className="hidden md:flex">
                     <Chart 
                         options={options1}
                         series={series1}
@@ -94,12 +159,29 @@ const Statistik = () => {
                         width="800"
                     />
                 </div>
-                <div className="mt-10">
+                <div className="mt-10 hidden md:flex">
                     <Chart 
                         options={options2}
                         series={series2}
                         type="bar"
                         width="800"
+                    />
+                </div>
+                {/* HP */}
+                <div className="md:hidden flex">
+                    <Chart 
+                        options={options1_hp}
+                        series={series1}
+                        type="bar"
+                        width="360"
+                    />
+                </div>
+                <div className="mt-10 md:hidden flex">
+                    <Chart 
+                        options={options2_hp}
+                        series={series2}
+                        type="bar"
+                        width="360"
                     />
                 </div>
             </div>

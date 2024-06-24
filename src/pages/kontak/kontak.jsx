@@ -2,7 +2,7 @@ import BoxHeader from "../../components/BoxHeader";
 
 const Kontak = () => {
     return (
-        <div className="content flex flex-col items-center md:m-4">
+        <div className="content flex flex-col items-center m-4">
             <BoxHeader title="Kontak Kami"/>
             <div className="flex flex-col md:flex-row my-10 md:w-3/4">
                 <div className="flex flex-col md:w-1/2">
